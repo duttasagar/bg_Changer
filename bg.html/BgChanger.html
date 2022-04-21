@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin:opx;
+            padding: 20px 100px;
+          
+        }
+        h1{
+            text-align: center;
+            text-decoration:underline ;
+        }
+        img{
+            margin-left:380px;
+        }
+
+        p{
+            justify-content: center;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .btn{
+            width:20px;
+            height:20px;
+            display:inline-block;
+            border-radius: 50%;
+            border:1px solid red;
+            cursor: pointer;
+        }
+
+        #white{
+            background-color: white;;
+
+        }
+
+        #aqua{
+            background-color: aqua;
+        }
+
+        #violet{
+            background-color: violet;
+        }
+
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('white')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('aqua')"></span>
+        <span class="btn" id="violet" onclick="changeBG('violet')"></span>
+        <span class="btn" id="black" onclick="changeBG('black')"></span>
+
+
+
+    </div>
+
+    
+
+    <h1 class="text">ABOUT US</h1>
+
+    <img src="vivekananda2.jpg">
+    <p class="text">India, officially the Republic of India (Hindi: Bhārat Gaṇarājya),[24] is a country in South Asia. It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west;[f] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar and Indonesia.
+
+    [29] By 1200 BCE, an archaic form of Sanskrit, an Indo-European language, had diffused into India from the northwest,[30][31] unfolding as the language of the Rigveda, and recording the dawning of Hinduism in India.[32] The Dravidian languages of India were supplanted in the northern and western regions.[33] By 400 BCE, stratification and exclusion by caste had emerged within Hinduism,[34] and Buddhism and Jainism had arisen, proclaiming social orders unlinked to heredity.[35] Early political consolidations gave rise to the loose-knit Maurya and Gupta Empires based in the Ganges Basin.[36] Their collective era was suffused with wide-ranging creativity,[37] but also marked by the declining status of women,[38] and the incorporation of untouchability into an organised system of belief.[g][39] In South India, the Middle kingdoms exported Dravidian-languages scripts and religious cultures to the kingdoms of Southeast Asia.[40]
+
+In the early medieval era, Christianity, Islam, Judaism, and Zoroastrianism put down roots on India's southern and western coasts.[41] Muslim armies from Central Asia intermittently overran India's northern plains,[42] eventually establishing the Delhi Sultanate, and drawing northern India into the cosmopolitan networks of medieval Islam.[43] In the 15th century, the Vijayanagara Empire created a long-lasting composite Hindu culture in south India.[44] In the Punjab,</p>
+<script>
+    function changeBG(color){
+        document.body.style.backgroundColor=color;
+
+        let txt=document.getElementsByClassName("text")
+        if(color=="black"){
+            for(let elm of txt ){
+             elm.style.color="white";
+            }
+            }else{
+                for(let elm of text){
+             elm.style.color="black";
+            }
+        }
+
+    }
+
+
+
+
+</script>
+</body>
+</html>
